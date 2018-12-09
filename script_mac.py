@@ -55,10 +55,10 @@ while 1:
                 str = subprocess.check_output(["iw","dev","wlan0","station","dump"])
 
         matchList = macCheck.findall(str.decode("UTF-8"),0)
-	
-		for i in matchList:
-			i = i.upper()
-		
+    
+        for i in matchList:
+            i = i.upper()
+        
         #si rien n'est vide
         if matchList2 and matchList:
                 #nouvelles adresses present dans matchlist mais pas dans matchlist2
